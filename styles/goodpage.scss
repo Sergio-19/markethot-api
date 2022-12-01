@@ -1,0 +1,278 @@
+
+
+.goodpage__wrapper{
+
+}
+
+.goodpage__title{
+    margin: 20px 0;
+    h1{
+        font-size: 22px;
+        color: #2d2d2d;
+    }
+}
+
+.goodpage__content-wrap{
+    margin-top: 60px;
+    display: flex;
+   
+
+}
+
+.goodpage__galery{
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    img{
+        width: 100%;
+    
+    }
+}
+
+.goodpage__galery-small{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.goodpage__galery-small-item{
+   width: 110px;
+   height: 110px;
+   cursor: pointer;
+   img{
+    width: 100%;
+    height: 100%;
+   }
+}
+
+.goodpage__options{
+    margin-left: 20px;
+    width: 100%;
+
+
+}
+
+.goodpage__option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    margin-bottom: 20px;
+}
+
+.goodpage__options-item{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+
+    small{
+        font-size: 16px;
+        color: #2d2d2d;
+        margin-bottom: 5px;
+    }
+
+    strong{
+        font-size: 16px;
+        color: #2d2d2d;
+    }
+
+    span{
+        display: block;
+        background-color: #CCF1E0;
+        padding: 8px 15px;
+        border-radius: 8px;
+        color: #00B863;
+        font-size: 16px;
+    }
+
+}
+
+.goodpage__price-wrap{
+    margin-top: 60px;
+
+}
+
+.goodpage__price{
+    span{
+        color: #2d2d2d;
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+}
+
+.goodpage__oldprice{
+    width: 110px;
+    margin: 10px 0;
+    span{
+      
+        position: relative;
+
+        &::before{
+            border-bottom: 3px solid red;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 50%;
+            transform: rotate(-7deg);
+            opacity: 0.8;
+        }
+    }
+}
+
+.goodpage__addcart-wrap{
+    max-width: 230px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+   
+
+}
+
+.goodpage__addcart-count{
+    width: 110px;
+    height: 40px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9ECEE;
+
+  span{
+    font-size: 18px;
+    color: #2d2d2d;
+  }
+
+}
+
+.goodpage__addcart-count-btn{
+    padding: 4px;
+    cursor: pointer;
+
+    &:hover{
+        i{
+          color: #00B863;    
+        }
+       
+    }
+      i{
+        color: #626060;
+        font-size: 18px;
+    }
+}
+
+.goodpage__addcart-btn{
+    padding: 0 0 0 20px;
+    button{
+        min-width: 90px;
+        min-height: 30px;
+        padding: 4px 10px;
+        border-radius: 8px;
+        background-color: #00B863;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+            background-color: #49cc8f;
+        }
+    }
+}
+
+.goodpage__descr-title{
+    margin: 40px 0 20px 0;
+
+}
+
+.goodpage__descr-title-item{
+    text-align: center;
+    width: 150px;
+    border-bottom: 4px solid #AB24AD;
+    padding: 10px;
+    i{
+        font-size: 18px;
+        color: #AB24AD;
+        margin-right: 8px;
+    }
+    span{
+        font-size: 20px;
+        font-weight: bold;
+        color: #AB24AD;
+    }
+}
+
+    .goodpage__descr-text{
+        padding: 10px;
+        margin-bottom: 100px;
+        p{
+
+        }
+        h2{
+            margin: 30px 0 10px 0;
+        }
+    }
+
+@media(max-width: 950px){
+    .goodpage__options-item-circle{
+        display: none;
+    }
+
+    .goodpage__addcart-wrap{
+        flex-direction: column;
+       
+    }
+
+    .goodpage__addcart-btn{
+        padding: 10px 0;
+    }
+
+    .goodpage__option{
+        align-items: baseline;
+    }
+}    
+
+@media(max-width: 768px){
+
+    .goodpage__title{
+        text-align: center;
+    }
+    .goodpage__content-wrap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .goodpage__option{
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .goodpage__options{
+        margin: 0 0 100px 0;
+        width: 100%;
+        padding: 10px;
+        // max-width: 310px;
+    }
+
+    .goodpage__price-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 450px){
+    .goodpage__options-item-article{
+        display: none;
+    }
+}
